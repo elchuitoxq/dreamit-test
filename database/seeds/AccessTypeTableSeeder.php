@@ -14,11 +14,19 @@ class AccessTypeTableSeeder extends Seeder
     {
         $access = array(
             array(
-                'message' => 'Accesso concedido',
+                'message' => 'Accesso de INGRESO concedido',
                 'access' => true
             ),
             array(
-                'message' => 'Acesso restringido el usuario esta en la Lista de Bloqueo',
+                'message' => 'Acesso de INGRESO restringido el usuario esta en la Lista de Bloqueo',
+                'access' => false
+            ),
+            array(
+                'message' => 'Accesso de SALIDA concedido',
+                'access' => true
+            ),
+            array(
+                'message' => 'Acesso de SALIDA restringido el usuario esta en la Lista de Bloqueo',
                 'access' => false
             )
         );

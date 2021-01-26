@@ -110,7 +110,7 @@ class AccessController extends Controller
 
             $access->user_id = $user[0]->id;
             $access->building_id = $building->id;
-            $access->access_type_id = 2;
+            $access->access_type_id = 4;
 
             $access->save();
 
@@ -118,7 +118,7 @@ class AccessController extends Controller
         } else {
             $access->user_id = $user[0]->id;
             $access->building_id = $building->id;
-            $access->access_type_id = 1;
+            $access->access_type_id = 3;
 
             $access->save();
 
