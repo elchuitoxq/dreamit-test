@@ -39,9 +39,9 @@ class BuildingsController extends Controller
             $building->address = $request->address;
 
             if($building->save()){
-                return response()->json(['success' => true, 'message' => 'El edifiio ha sido creado correctamente', 'buildings' => Building::all()], 200);
+                return response()->json(['success' => true, 'message' => 'El edificio ha sido creado correctamente', 'buildings' => Building::all()], 200);
             } else {
-                return response()->json(['success' => true, 'message' => 'El edifiio no ha sido almacenado.'], 200);
+                return response()->json(['success' => true, 'message' => 'El edificio no ha sido almacenado.'], 200);
             }
         }
     }
